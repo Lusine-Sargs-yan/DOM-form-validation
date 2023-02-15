@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Form</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css"/>
+</head>
+<body>
+    <section class="contact">
+        <div class="contact__wrapper">
+            <div class="contact__content">
+                <div>
+                    <h1 class="contact__title">Form Validation</h1>
+                </div>
+                <form id='form' class="contact__form">
+                    <div class="contact__item">
+                        <label for="" class="contact__item-title">Email</label>
+                        <input type="text" class="contact__item-inner email"/>
+                        <div id="email" class="error"></div>
+                    </div>
+                    <div class="contact__item">
+                        <label for="" class="contact__item-title">Phone</label>
+                        <input type="text" class="contact__item-inner phone"/>
+                        <div id="phone" class="error"></div>
+                    </div>
+                    <div class="contact__item">
+                        <button type="submit" class="contact__item-submit" >Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="success" class="success__modal--close" data-modal-id="1">
+        <div class="success__wrapper" data-modal-id="1">
+            <div class="success__content">
+                <h4 class="success__message">Success!</h4>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
